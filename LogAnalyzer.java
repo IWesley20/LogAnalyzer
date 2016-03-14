@@ -56,4 +56,13 @@ public class LogAnalyzer
     {
         reader.printData();
     }
+    public int numberofAccesses(){
+        int total = 0;
+        //Add the value in each element of hourCounts
+        //to total.
+        for(int hour = 0; hour < hourCounts.length; hour++) {
+            total = total + hourCounts[hour];
+        }
+           return total;
+        }
 }
